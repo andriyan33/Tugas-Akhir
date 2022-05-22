@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-heading">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="top-text header-text">
+          <h6>HASIL PREPROCESSING</h6>
+          <br>
+          <!-- <h2>Feel free to send us a message about your business needs</h2> -->
+          <form id="klas_form" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <textarea class="form-control" placeholder="Komentar" name="klas" id="klas" style="height: 120px"></textarea>
+                <br>
+                <a id="btn-klas" class="btn btn-primary float-end">KLASIFIKASI</a>
+              </div>
+            </div>
+          </form>
+          <div class="row mt-4">
+            <div class="col-lg-12">
+              <textarea class="form-control" placeholder="Hasil Klasifikasi" id="hasilklas" style="height: 100px"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

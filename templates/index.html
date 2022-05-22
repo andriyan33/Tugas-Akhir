@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Human Detection - Raspberry</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='assets/css/style.css')}}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Bocor - v4.6.0
+  * Template URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class=" header-sticky">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Human Detection<span>.</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="{{ url_for('static', filename='assets/img/logo.png')}}" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Research</a></li>
+          <li><a class="nav-link scrollto" href="#services">Detection</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center mt-5">
+        <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+          <h1>Website Based Implementation</h1>
+          <h2>For Human Detection using Flask</h2>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+          <img src="{{ url_for('static', filename='assets/img/upload.svg')}}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{{ url_for('static', filename='assets/img/logoitenas.png')}}" class="img-fluid" alt=""
+                data-aos="flip-right" data-aos-delay="100">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{{ url_for('static', filename='assets/img/logo-if.png')}}" class="img-fluid" alt=""
+                data-aos="flip-right" data-aos-delay="200">&nbsp;<span data-aos="flip-right"
+                data-aos-delay="200">Informatika</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{{ url_for('static', filename='assets/img/raspberry-pi.svg')}}" class="img-fluid" alt=""
+                data-aos="flip-right" data-aos-delay="300">&nbsp;<span data-aos="flip-right"
+                data-aos-delay="300">Raspberry-Pi</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{{ url_for('static', filename='assets/img/python-3.svg')}}" class="img-fluid" alt=""
+                data-aos="flip-right" data-aos-delay="400">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{{ url_for('static', filename='assets/img/tensorflow-2.svg')}}" class="img-fluid" alt=""
+                data-aos="flip-right" data-aos-delay="500">&nbsp;<span data-aos="flip-right"
+                data-aos-delay="400">Tensorflow</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{{ url_for('static', filename='assets/img/flask.svg')}}" class="img-fluid" alt=""
+                data-aos="flip-right" data-aos-delay="600">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container">
+
+        <div class="row">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3 data-aos="fade-in" data-aos-delay="100">Realtime Human Detection</h3>
+              <p data-aos="fade-in">
+                Aplikasi berbasis web yang dapat digunakan untuk mendeteksi manusia menggunakan kamera sebagai input
+                sistem
+              </p>
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="bx bx-receipt"></i>
+                  <h4><a href="#">Real time</a></h4>
+                  <p>Input dari kamera</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4><a href="#">Arsitektur Fast R-CNN</a></h4>
+                  <p>Menggunakan Fast R-CNN untuk pendeteksian</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-images"></i>
+                  <h4><a href="#">Inception V2</a></h4>
+                  <p>Menggunakan Inception V2 untuk pendeteksian</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-shield"></i>
+                  <h4><a href="#">COCO Dataset</a></h4>
+                  <p>Menggunakan dataset COCO untuk pelatihan model</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="services" class="features section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Features</h2>
+          <p data-aos="fade-in">Deteksi manusia secara realtime menggunakan camera</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='assets/img/features-1.svg')}}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-4" data-aos="fade-left">
+            <h3>VIDEO REAL TIME</h3>
+
+            <div class="row">
+              <div class="col">
+                <!-- <img src="{{ url_for('video_feed') }}" alt=""> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+            <img src="{{ url_for('static', filename='assets/img/features-2.svg')}}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+            <h3>Faster R-CNN</h3>
+            <p class="fst-italic" align="justify">
+              Faster RCNN adalah arsitektur pendeteksi objek yang dihadirkan oleh Ross Girshick, Shaoqing Ren, Kaiming
+              He dan Jian Sun pada tahun 2015, dan merupakan salah satu arsitektur pendeteksi objek terkenal yang
+              menggunakan jaringan saraf konvolusi seperti YOLO (You Look Only Once) dan SSD ( Single Shot Detektor).
+            </p>
+            <h3 class="mt-4">Inception V2</h3>
+            <p align="justify">
+              Inception v2 adalah generasi kedua dari arsitektur jaringan saraf convolutional Inception yang menggunakan
+              normalisasi batch. Perubahan lain termasuk menjatuhkan putus sekolah dan menghapus normalisasi respons
+              lokal, karena manfaat dari normalisasi batch.
+            </p>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='assets/img/features-3.svg')}}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5" data-aos="fade-left">
+            <h3>Flask</h3>
+            <p align="justify">Flask adalah kerangka kerja web, ini adalah modul Python yang memungkinkan Anda
+              mengembangkan aplikasi web dengan mudah. Ini memiliki inti yang kecil dan mudah diperluas: ini adalah
+              kerangka kerja mikro yang tidak menyertakan ORM (Object Relational Manager) atau fitur semacam itu.Itu
+              memang memiliki banyak fitur keren seperti perutean url, mesin templat. Ini adalah kerangka kerja aplikasi
+              web WSGI.</p>
+            <h3 class="mt-4">COCO Dataset</h3>
+            <p align="justify">
+              Dataset Common Objects in Context (COCO) adalah salah satu database pengenalan objek sumber terbuka paling
+              populer yang digunakan untuk melatih program pembelajaran mendalam. Basis data ini mencakup ratusan ribu
+              gambar dengan jutaan objek yang sudah diberi label untuk pelatihan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Features Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Team</h2>
+          <p data-aos="fade-in"></p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/Irma2.jpg')}}" alt=""></div>
+              <h4>Irma Amelia Dewi, S.Kom., M.T.</h4>
+              <span>Dosen Informatika Itenas</span>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/anisa2.jpeg')}}" alt=""></div>
+              <h4>Anisa Putri Setyaningrum, S.Kom.</h4>
+              <span>Programmer</span>
+            </div>
+          </div>
+
+
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/sidiq.jpg')}}" alt=""></div>
+              <h4>Muhammad Assidiq Fattah, S.Kom.</h4>
+              <span>Programmer</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-9">
+            <div class="widget">
+              <div class="widget-title">UIN SUNAN GUNUNG DJATI BANDUNG</div>
+
+              <p class="mb-5 text-white">Program Studi Informatika <br>
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Informatika</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#team">Team</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+          document.getElementById('header').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+          // remove padding top from body
+          document.body.style.paddingTop = '0';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

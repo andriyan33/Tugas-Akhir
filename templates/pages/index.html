@@ -1,0 +1,29 @@
+{% extends 'layout/base.html' %} 
+{% block content %}
+<section>
+  <form
+    method="POST"
+    class="form-upload"
+    action="{{url_for('upload_file')}}"
+    enctype="multipart/form-data"
+  >
+    <div>
+      <input type="file" name="file"/>
+    </div>
+    <button type="submit">Upload</button>
+  </form>
+
+  <div class="video-container">
+  {% if filename %}
+    <video width="360" controls>
+      <source src="/static/assets/video/{{ filename }}" type="video/mp4" />
+      Your browser does not support HTML video.
+    </video>
+    {% else %}
+      <div class="video-placeholder">
+        <p>Uploaded video will be show here ...</p>
+      </div>  
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-heading">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="top-text header-text">
+          <form id="uploadform" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <label for="gambar" class="col-sm-12 col-form-label">Input Gambar</label>
+              <div class="col-sm-12">
+                <div class="custom-file">
+                  <input type="file" name="file" id="file" class="dropify" data-max-file-size="5M"
+                    data-allowed-file-extensions="jpeg png jpg" accept="image/*" required>
+                </div>
+                <a id="btn-upload" class="btn btn-primary btn-lg float-right mt-2">Upload</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <br>
+        
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Hasil OCR" id="hasilocr" style="height: 150px"></textarea>
+          <label for="floatingTextarea2">Hasil OCR</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <script>
+  $(document).ready(function () {
+      
+  })
+</script> -->
+{% endblock %}

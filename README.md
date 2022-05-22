@@ -1,1 +1,1 @@
-# Deteksi Komentar engatif dalam gambar (meme)
+# Deteksi Komentar nengatif dalam gambar (meme) 
